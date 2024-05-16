@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>New Registration
+                <span class="content_w"></span>
+            </h1>
+            <section class="header_section">
+                <form action="">
+                    <div class="form_container">
+                        <div class="form_control">
+                            <label for="userName">User Name</label>
+                            <input id="userName" placeholder="Enter UserName...">
+                        </div>
+                        <div class="form_control">
+                            <label>Password</label>
+                            <input type="password" class="input" id="password" name=""
+                                placeholder="Enter your password min 8 characters" autocomplete="off" onkeyup='check()'
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                maxlength="100" minlength="8" required>
+                        </div>
+                        <div class="form_control">
+                            <label>Confirm Password</label>
+                            <input type="password" onkeyup='check()' class="input" id="confirm-password" name=""
+                                placeholder="Confirm password" autocomplete="off"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                maxlength="100" minlength="8" required>
+                        </div>
+                        <div class="form_control">
+                            <label for="usertype">User type</label>
+                            <select name="usertype" id="usertype">
+                                <option value="usertype"></option>
+                                <option value="Student">Student</option>
+                                <option value="Faculty">faculty</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+
+                    <div class="button_container">
+                        <button type="submit">Create</button>
+                        <button type="submit">Cancel</button>
+                    </div>
+                </form>
+
+            </section>
+        </div>
+
+    </div>
+</body>
+
+</html>
